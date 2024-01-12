@@ -1,78 +1,109 @@
-$textColor:#7884A5;
-$pColor: #292E3D;
-$cardTextColor: #A2ACC7;
+@import './Sizes';
+@import './Color';
+
 .slider {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    overflow:hidden;
-  }
-  
-  .slide-card {
+    overflow: hidden;
+}
+
+.slide-card {
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
     align-items: left;
-    width: 19rem !important;
-    height: 30rem !important;
-    margin-right: 3rem;
-   
-  }
-  
-  .image-container {
+    width: 344px !important;
+    height: 453px !important;
+    margin: 0 1rem;
+
+}
+
+//images
+.image-container {
     height: 344px;
-  max-width: 100%;
-  }
-  .img {
+    max-width: 100%;
+}
+.img {
     max-width: 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
-  }
+}
 
-  .circle{
+.circle {
     border-radius: 50%;
-  }
+}
 
-  .double {
-    width: 36rem !important;
-  }
-  .img__double{
-    border-radius: 30%;
-  }
-
-
-  .flower{
+.petal {
     display: block;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  border-radius: 100% 0% 100% 80% / 100% 0% 100% 0%;
-  }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    border-radius: 100% 0 100% 80% / 100% 0 100% 0;
+}
+.double {
+    width: 36rem !important;
+}
+.img__double {
+    border-radius: 30%;
+}
 
-
-
-
-  .container__title{
+//text
+.container__title {
     font-weight: bold;
-    color:$textColor;
+    color: $textColor;
     font-size: 72px;
-  }
 
-  .container__paragraph{
+    @media screen and (max-width: $tablet) {
+        font-size: 54px;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 36px;
+    }
+}
+
+.container__paragraph {
     margin-top: 2%;
     margin-bottom: 5%;
-    color:#292E3D;
+    color: #292E3D;
     font-size: 24px;
-  }
 
-  .text__title{
-    color:#A2ACC7;
+    @media screen and (max-width: $tablet) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 16px;
+    }
+}
+
+.text__title {
+    color: #A2ACC7;
     font-size: 28px;
-  }
 
-  .text__date{
-    color:#A2ACC7;
+    @media screen and (max-width: $tablet) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 20px;
+    }
+}
+
+.text__date {
+    color: #A2ACC7;
     font-size: 18px;
-  }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 14px;
+    }
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } 
