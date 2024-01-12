@@ -26,7 +26,7 @@
     }
     
     @media screen and (max-width: $tablet) {
-        width: 229px !important;
+        width: 200px !important;
         height: 302px !important;
     }
     @media screen and (max-width: $mobile) {
@@ -70,11 +70,10 @@
 
     @media screen and (max-width: $tablet) {
         width: 450px !important;
-        // margin-left:  -2rem;
     }
     @media screen and (max-width: $mobile) {
         width: 394px !important;
-        // margin-left: 0 -1rem;
+
     }
 
 }
@@ -138,10 +137,4 @@
     position: relative;
 }
 
-
-/* the slides */
-// .slick-slider {
-//     overflow: hidden;
-// }
-/* the parent */
 

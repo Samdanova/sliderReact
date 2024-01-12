@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import  {useRef} from 'react';
 import {NextArrow} from './NextArrow';
 import {PrevArrow} from './PrevArrow';
 import data from '../data/mockData';
