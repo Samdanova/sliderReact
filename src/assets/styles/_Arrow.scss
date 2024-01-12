@@ -1,0 +1,15 @@
+.slider__arrow{
+    position: absolute;
+    top: 31rem;
+   
+    @media screen and (max-width: $tablet) {
+       top: 25rem;
+    }
+    @media screen and (max-width: $mobile) {
+        top: 17rem;
+    }
+}
+
+.slider__arrow_right{
+    right: 10rem;
+}

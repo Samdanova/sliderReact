@@ -2,12 +2,9 @@ export const NextArrow = (props : any) => {
     const {className, style, onClick} = props;
     return (
         <div
-            className={className}
+        className={`slider__arrow slider__arrow_right ${className}`}
             style={{
                 ...style,
-                position: 'absolute',
-                right: '10rem',
-                top: '32rem'
             }}
             onClick={onClick}>
             <svg

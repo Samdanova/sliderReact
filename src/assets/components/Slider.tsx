@@ -20,12 +20,12 @@ export const SliderCarousel = () => {
         nextArrow: <NextArrow/>,
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 400,
                 settings: {
                     slidesToShow: 1
                 }
             }, {
-                breakpoint: 1024,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 2
                 }

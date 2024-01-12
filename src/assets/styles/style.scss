@@ -1,5 +1,6 @@
 @import './Sizes';
 @import './Color';
+@import './Arrow';
 
 .slider {
     display: flex;
@@ -14,10 +15,24 @@
     display: flex !important;
     flex-direction: column;
     justify-content: space-between;
-    align-items: left;
+    align-items: center;
     width: 344px !important;
     height: 453px !important;
-    margin: 0 1rem;
+    margin-right: 2vw;
+    margin-left:1vw;
+
+    @media screen and (max-width: $desktop) {
+         width: 300px !important;
+    }
+    
+    @media screen and (max-width: $tablet) {
+        width: 229px !important;
+        height: 302px !important;
+    }
+    @media screen and (max-width: $mobile) {
+        width: 172px !important;
+    height: 226px !important;
+    }
 
 }
 
@@ -44,7 +59,24 @@
     border-radius: 100% 0 100% 80% / 100% 0 100% 0;
 }
 .double {
-    width: 36rem !important;
+    width: 788px !important;
+    max-width: 100%;
+    margin-left: -3%;
+    
+    @media screen and (max-width: $desktop) {
+        width: 525px !important;
+        margin-left: 3%;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 450px !important;
+        // margin-left:  -2rem;
+    }
+    @media screen and (max-width: $mobile) {
+        width: 394px !important;
+        // margin-left: 0 -1rem;
+    }
+
 }
 .img__double {
     border-radius: 30%;
@@ -106,4 +138,10 @@
     position: relative;
 }
 
-.slick-list { margin: 0 -7px; & .slick-slide > div { padding: 0 10px; } 
+
+/* the slides */
+// .slick-slider {
+//     overflow: hidden;
+// }
+/* the parent */
+

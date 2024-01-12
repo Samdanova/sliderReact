@@ -1,12 +1,11 @@
+
 export const PrevArrow = (props : any) => {
     const {className, style, onClick} = props;
     return (
         <div
-            className={className}
+            className={`slider__arrow ${className}`}
             style={{
                 ...style,
-                position: 'absolute',
-                top: '32rem'
             }}
             onClick={onClick}>
             <svg
