@@ -1,0 +1,35 @@
+$textColor:#525C7A;
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+//   .image-container {
+//     margin-bottom: 10px;
+//   }
+  
+  .img {
+    max-width: 100%;
+    border-radius: 50%; /* или другие стили для лепестков */
+  }
+  
+  .double {
+    grid-column: span 2;
+  }
+  
+  .single {
+    grid-column: span 1;
+  }
+
+  .flower{
+    border-radius: 15% 200% 15% 100%;
+  }
